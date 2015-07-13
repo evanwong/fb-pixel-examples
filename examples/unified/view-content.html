@@ -118,7 +118,10 @@
       'f3j3d5tqshhpqrziewpt',
       'z09s8mugrsiraequnrlj'];
 
-    var rand = Math.random() * contentIds.length + 1;
+    var rand = Math.random() * 10 + 1;
+    var min = 0;
+    var max = contentIds.length;
+    rand = Math.floor(Math.random() * (max - min + 1)) + min;
     var pid = contentIds[rand];
     console.log('rand', rand);
     console.log('pid', pid);
