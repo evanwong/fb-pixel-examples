@@ -119,7 +119,10 @@
       'z09s8mugrsiraequnrlj'];
 
     var rand = Math.random() * contentIds.length + 1;
-    fbq('track', 'ViewContent', {content_type: 'product', content_ids: [contentIds[rand]]});
+    var pid = contentIds[rand];
+    console.log('rand', rand);
+    console.log('pid', pid);
+    fbq('track', 'ViewContent', {content_type: 'product', content_ids: [pid]});
     </script>
     <noscript><img height="1" width="1" style="display:none"
     src="https://www.facebook.com/tr?id=1144141118935124&ev=PageView&noscript=1"
