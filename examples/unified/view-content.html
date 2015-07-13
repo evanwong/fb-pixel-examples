@@ -118,15 +118,20 @@
       'f3j3d5tqshhpqrziewpt',
       'z09s8mugrsiraequnrlj'];
 
-    var rand = Math.random() * 10 + 1;
-    var min = 0;
-    var max = contentIds.length;
-    rand = Math.floor(Math.random() * (max - min + 1)) + min;
-    var pid = contentIds[rand];
-    console.log('rand', rand);
-    console.log('pid', pid);
-    document.getElementById('contentId').innerHtml = pid;
-    fbq('track', 'ViewContent', {content_type: 'product', content_ids: [pid]});
+    function ready() {
+      var rand = Math.random() * 10 + 1;
+      var min = 0;
+      var max = contentIds.length;
+      rand = Math.floor(Math.random() * (max - min + 1)) + min;
+      var pid = contentIds[rand];
+      console.log('rand', rand);
+      console.log('pid', pid);
+      document.getElementById('contentId').innerHtml = pid;
+      fbq('track', 'ViewContent', {content_type: 'product', content_ids: [pid]});
+    }
+
+    document.addEventListener( "DOMContentLoaded", ready, false);
+
     </script>
     <noscript><img height="1" width="1" style="display:none"
     src="https://www.facebook.com/tr?id=1144141118935124&ev=PageView&noscript=1"
