@@ -125,6 +125,7 @@
     var pid = contentIds[rand];
     console.log('rand', rand);
     console.log('pid', pid);
+    document.getElementById('contentId').innerHtml = pid;
     fbq('track', 'ViewContent', {content_type: 'product', content_ids: [pid]});
     </script>
     <noscript><img height="1" width="1" style="display:none"
@@ -143,6 +144,7 @@
 
     <section class="main-content">
       <h3>Unified - View Content<h3>
+      <div id='contentId'></div>
       <footer class="site-footer">
         <span class="site-footer-owner"><a href="https://github.com/evanwong/fb-pixel-examples">fb-pixel-examples</a> is maintained by <a href="https://github.com/evanwong">evanwong</a>.</span>
       </footer>
