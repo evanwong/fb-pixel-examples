@@ -124,18 +124,16 @@
       var max = contentIds.length;
       rand = Math.floor(Math.random() * (max - min + 1)) + min;
       var pid = contentIds[rand];
-      console.log('rand', rand);
-      console.log('pid', pid);
       document.getElementById('contentId').innerHtml = pid;
-      fbq('track', 'ViewContent', {content_type: 'product', content_ids: [pid]});
+      fbq('track', 'ViewContent', {
+        value: 99.99,
+        currency: 'USD',
+        content_type: 'product',
+        content_ids: [pid]
+      });
     }
-
     document.addEventListener( "DOMContentLoaded", ready, false);
-
     </script>
-    <noscript><img height="1" width="1" style="display:none"
-    src="https://www.facebook.com/tr?id=1144141118935124&ev=PageView&noscript=1"
-    /></noscript>
     <!-- End Facebook Pixel Code -->
   </head>
   <body>

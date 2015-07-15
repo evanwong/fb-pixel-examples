@@ -18,11 +18,13 @@
 
     fbq('init', '1144141118935124');
     fbq('track', 'PageView');
-    fbq('track', 'AddToCart');
+    fbq('track', 'AddToCart', {
+      value: 99.99,
+      currency: 'USD',
+      content_type: 'product',
+      content_ids: ['k6fziy3qx99mipsuejny']
+    });
     </script>
-    <noscript><img height="1" width="1" style="display:none"
-    src="https://www.facebook.com/tr?id=1144141118935124&ev=PageView&noscript=1"
-    /></noscript>
     <!-- End Facebook Pixel Code -->
   </head>
   <body>

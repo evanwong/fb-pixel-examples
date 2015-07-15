@@ -17,17 +17,15 @@
     document,'script','//connect.facebook.net/en_US/fbevents.js');
 
     fbq('init', '1144141118935124');
-    fbq('track', 'PageView');
-    var price = Math.random() * 10 + 1;
-    var min = 0;
-    var max = 99;
-    var random1 = Math.floor(Math.random() * (max - min + 1)) + min;
-    var random2 = Math.floor(Math.random() * (max - min + 1)) + min;
-    var value = radom1 + '.' + random2;
-    fbq('track', 'Purchase', {value: value, currency: 'USD'});
+    fbq('track', 'Purchase', {
+      value: 99.99,
+      currency: 'USD',
+      content_ids: ['e91m92kt7jq0cqdyjalm'],
+      content_type: 'product'
+    });
     </script>
     <noscript><img height="1" width="1" style="display:none"
-    src="https://www.facebook.com/tr?id=1144141118935124&ev=PageView&noscript=1"
+    src="https://www.facebook.com/tr?id=1144141118935124&ev=Purchase&cd[value]=99.99&cd[currency]=USD&cd[content_ids]=e91m92kt7jq0cqdyjalm&cd[product_type]=product&noscript=1"
     /></noscript>
     <!-- End Facebook Pixel Code -->
   </head>
