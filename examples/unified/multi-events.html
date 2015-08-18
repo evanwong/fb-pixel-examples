@@ -25,18 +25,19 @@
     fbq('track', 'ViewContent', {content_ids: ['uel6lfeqj1al2xlk3d4r', 'ubx9poedblnnexqa3oc2'], content_type: 'product'});
     fbq('track', 'ViewContent', {content_ids: ['kgmghaosz7t23op33q22'], content_type: 'product'});
 
-    fbq('track', 'ViewContent', object);
     fbq('track', 'AddToCart', {content_ids: ['zdpwfa6o69m861vq0tx5'], content_type: 'product'});
 
     fbq('track', 'ViewContent', {content_ids: ['lss94cbuzcaxs25ebz8v'], content_type: 'product'});
 
-
-    fbq('track', 'ViewContent', {content_ids: ['pixu5zpye9b1t9vl8ih2'], content_type: 'product'});
+    fbq('track', 'ViewContent', object);
     fbq('track', 'AddToCart', object);
 
     object = {content_ids: ['y1dwnwgiy76sxdov8qkp'], content_type: 'product'};
     fbq('track', 'ViewContent', object);
 
+    setTimeout(function() {
+      fbq('track', 'ViewContent', {content_ids: ['pixu5zpye9b1t9vl8ih2'], content_type: 'product'});
+    }, 1);
     </script>
     <!-- End Facebook Pixel Code -->
   </head>
